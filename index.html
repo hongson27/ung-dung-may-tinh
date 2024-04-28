@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" width="50px" id="input1">
+<input type="number" width="50px" id="input2">
+<br>
+<button onclick="Addition()">Addition(+)</button>
+<button onclick="Subtraction()">Subtraction(-)</button>
+<button onclick="Multiplication()">Multiplication(x)</button>
+<button onclick="Division()">Division(/)</button>
+<br><br>
+<p id="screen"></p>
+<script>
+function Addition() {
+let input1 = +document.getElementById("input1").value;
+let input2 = +document.getElementById("input2").value;
+let result = input1 + input2;
+document.getElementById("screen").innerHTML='Result Division: ' + result;
+}
+function Subtraction() {
+let input1 = +document.getElementById("input1").value;
+let input2 = +document.getElementById("input2").value;
+let result = input1 - input2;
+document.getElementById("screen").innerHTML='Result Division: ' + result;
+}
+function Multiplication() {
+let input1 = +document.getElementById("input1").value;
+let input2 = +document.getElementById("input2").value;
+let result = input1 * input2;
+document.getElementById("screen").innerHTML='Result Division: ' + result;
+}
+function Division() {
+let input1 = +document.getElementById("input1").value;
+let input2 = +document.getElementById("input2").value;
+let result = input1 / input2;
+document.getElementById("screen").innerHTML='Result Division: ' + result;
+}
+</script>
+
+</body>
+</html>
